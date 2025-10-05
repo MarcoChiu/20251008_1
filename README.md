@@ -7,7 +7,7 @@
 ## [六角模板](https://codepen.io/hexschool/pen/BaQveVm)
  
 ## [流程圖](https://miro.com/app/board/uXjVJK76BZE=/)
-```
+ 
 ## 版型資料設計
 - 地區用 change 監聽
 - 上方新增的地區跟下方篩選的地區都寫死選項（依照目前提供的 JSON data area 欄位）
@@ -17,7 +17,7 @@
 - 篩選後會顯示『搜尋資料為 ? 筆』
 - 描述欄位使用 textarea
 - 星級區間是 1-10 分
-金額、組數、星級的 type 為 Number
+- 金額、組數、星級的 type 為 Number
 
  
  
