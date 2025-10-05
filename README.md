@@ -1,7 +1,7 @@
 # JS 工程師養成直播班｜2025 秋季｜第五堂 - 期中試煉
 
  ## 設計稿
-``` html
+```  
 https://www.figma.com/design/SHgr0iQnTPec19maqKCEpN/JS%E7%9B%B4%E6%92%AD%E7%8F%AD-Week5-Week7?node-id=1-597&t=9p6o3FJbJJ0l3YEq-0
 ```
 ## 圖片
@@ -27,18 +27,5 @@ https://miro.com/app/board/uXjVJK76BZE=/
 - 星級區間是 1-10 分
 金額、組數、星級的 type 為 Number
 
-*斜體*
-**強調、粗體**
-~~刪除線~~
-^上標^ 或 <sup>上標</sup>
-~下標~ 或 <sub>下標</sub>
-
-```python
-#include <stdio.h>
-
-int main(void) {
-    printf("Hello World!\n");
-    return 0;
-}
-```
+ 
  
