@@ -4,19 +4,19 @@
 ```
 https://www.figma.com/design/SHgr0iQnTPec19maqKCEpN/JS%E7%9B%B4%E6%92%AD%E7%8F%AD-Week5-Week7?node-id=1-597&t=9p6o3FJbJJ0l3YEq-0
 ```
-圖片
+## 圖片
 ```
 https://github.com/hexschool/2022-web-layout-training/tree/main/js_week5
 ```
-懶人模板
+## 六角模板
 ```
 https://codepen.io/hexschool/pen/BaQveVm
 ```
-流程圖
+## 流程圖
 ```
 https://miro.com/app/board/uXjVJK76BZE=/
 ```
-### 版型資料設計
+## 版型資料設計
 地區用 change 監聽
 上方新增的地區跟下方篩選的地區都寫死選項（依照目前提供的 JSON data area 欄位）
 地區的篩選下拉需要加上『全部地區』option
