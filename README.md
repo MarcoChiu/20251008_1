@@ -17,14 +17,14 @@ https://codepen.io/hexschool/pen/BaQveVm
 https://miro.com/app/board/uXjVJK76BZE=/
 ```
 ## 版型資料設計
-地區用 change 監聽
-上方新增的地區跟下方篩選的地區都寫死選項（依照目前提供的 JSON data area 欄位）
-地區的篩選下拉需要加上『全部地區』option
-不需要有「清除資料」的按鈕
-預設資料為 3 筆（內容需依照目前提供的 JSON data）
-篩選後會顯示『搜尋資料為 ? 筆』
-描述欄位使用 textarea
-星級區間是 1-10 分
+- 地區用 change 監聽
+- 上方新增的地區跟下方篩選的地區都寫死選項（依照目前提供的 JSON data area 欄位）
+- 地區的篩選下拉需要加上『全部地區』option
+- 不需要有「清除資料」的按鈕
+- 預設資料為 3 筆（內容需依照目前提供的 JSON data）
+- 篩選後會顯示『搜尋資料為 ? 筆』
+- 描述欄位使用 textarea
+- 星級區間是 1-10 分
 金額、組數、星級的 type 為 Number
 
 *斜體*
@@ -32,4 +32,13 @@ https://miro.com/app/board/uXjVJK76BZE=/
 ~~刪除線~~
 ^上標^ 或 <sup>上標</sup>
 ~下標~ 或 <sub>下標</sub>
+
+```python
+#include <stdio.h>
+
+int main(void) {
+    printf("Hello World!\n");
+    return 0;
+}
+```
  
