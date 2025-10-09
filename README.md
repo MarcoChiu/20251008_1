@@ -1,12 +1,14 @@
 # JS 工程師養成直播班｜2025 秋季｜第五堂 - 期中試煉
 
- ## [設計稿](https://www.figma.com/design/SHgr0iQnTPec19maqKCEpN/JS%E7%9B%B4%E6%92%AD%E7%8F%AD-Week5-Week7?node-id=1-597&t=9p6o3FJbJJ0l3YEq-0)
+## [設計稿](https://www.figma.com/design/SHgr0iQnTPec19maqKCEpN/JS%E7%9B%B4%E6%92%AD%E7%8F%AD-Week5-Week7?node-id=1-597&t=9p6o3FJbJJ0l3YEq-0)
  
 ## [圖片](https://github.com/hexschool/2022-web-layout-training/tree/main/js_week5)
  
 ## [六角模板](https://codepen.io/hexschool/pen/BaQveVm)
  
 ## [流程圖](https://miro.com/app/board/uXjVJK76BZE=/)
+
+## [展示頁](https://marcochiu.github.io/20251008_1/)
  
 ## 版型資料設計
 - 地區用 change 監聽
