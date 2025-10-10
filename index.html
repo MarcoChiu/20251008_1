@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS 工程師養成直播班｜2025 秋季｜第五堂 - 期中試煉</title>
 
+    <!DOCTYPE html>
     <link href="./css/reset.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
 
@@ -295,6 +295,58 @@
             //console.log (areaData);
         }
 
+        //AI
+        function isEmpty(value) {
+            return !value || value.trim().length === 0;
+        }
+
+        //AI
+        function isImageUrl(url) {
+            const imageRegex = /\.(png|jpg|jpeg|svg|webp|gif|bmp)$/i;
+            return imageRegex.test(url);
+        }
+
+        //錯誤
+        function dataError(obj, objicon, type) {
+            let error = "";
+            //console.log(obj.value);
+            switch (type) {
+                case 1: //字串
+                    if (isEmpty(obj.value)) { error = "必填!"; }
+                    break;
+                case 2://圖片連結
+
+
+
+                    if (isImageUrl(obj.value) === false) {
+                        error = "圖片網址格式錯誤!";
+                    }
+                    break;
+                case 3: //數字     
+                    if (isEmpty(obj.value) && isNaN(obj.val)) { error = "必填數字!"; }
+                    break;
+                case 4: //數字   
+                    if (isEmpty(obj.value) || isNaN(obj.value)) {
+                        error = "必填數字!";
+                    } else if (parseInt(obj.value) < 1 || parseInt(obj.value) > 10) {
+                        error = "星級區間是 1-10 分";
+                    }
+                    break;
+                case 5: //數字過多   
+                    if (obj.value !== "" && obj.value !== undefined && obj.value.length > 100) { error = "限 100 字"; }
+                    break;
+            }
+
+            //console.log(error);
+            if (error !== "") {
+                objicon.innerHTML = `<i class="fas fa-exclamation-circle"></i><span>${error}</span>`;
+                return 1;
+            } else {
+                objicon.innerHTML = "";
+                return 0;
+            }
+        }
+
         //初始化下拉選單
         function initSelect() {
             //有提供其他方式再修改即可
@@ -314,16 +366,16 @@
                 //console.log('全選');
                 filterData = data;
             }
-            showHtml(filterData);
-        }
+            // showHtml(filterData);
+            //}
 
-        //產生出篩選後的Html
-        function showHtml(showData) {
+            //產生出篩選後的Html
+            //function showHtml(showData) {
             let html = "";
-            if (showData.length > 0) {
+            if (filterData.length > 0) {
                 //console.log('>0');
                 cantFind_area.style.display = 'none';
-                showData.forEach(function (item) {
+                filterData.forEach(function (item) {
                     html += ` 
              <li class="ticketCard">
                 <div class="ticketCard-img">
@@ -359,7 +411,7 @@
                 cantFind_area.style.display = 'block';
             }
             ticketCard_area.innerHTML = html;
-            searchResult_text.textContent = `本次搜尋共 ${showData.length} 筆資料`;
+            searchResult_text.textContent = `本次搜尋共 ${filterData.length} 筆資料`;
         }
 
         function init() {
@@ -428,55 +480,17 @@
             }
         }
 
-        //AI
-        function isEmpty(value) {
-            return !value || value.trim().length === 0;
-        }
-
-        //錯誤
-        function dataError(obj, objicon, type) {
-            let error = "";
-            //console.log(obj.value);
-            switch (type) {
-                case 1: //字串
-                    if (isEmpty(obj.value)) { error = "必填!"; }
-                    break;
-                case 2: //數字     
-                    if (isEmpty(obj.value) && isNaN(obj.val)) { error = "必填數字!"; }
-                    break;
-                case 3: //數字   
-                    if (isEmpty(obj.value) || isNaN(obj.value)) {
-                        error = "必填數字!";
-                    } else if (parseInt(obj.value) < 1 || parseInt(obj.value) > 10) {
-                        error = "星級區間是 1-10 分";
-                    }
-                    break;
-                case 4: //數字過多   
-                    if (obj.value !== "" && obj.value !== undefined && obj.value.length > 100) { error = "限 100 字"; }
-                    break;
-            }
-
-            //console.log(error);
-            if (error !== "") {
-                objicon.innerHTML = `<i class="fas fa-exclamation-circle"></i><span>${error}</span>`;
-                return 1;
-            } else {
-                objicon.innerHTML = "";
-                return 0;
-            }
-        }
-
         function addData() {
 
             //驗證錯誤
             let errorCount = 0;
             errorCount += dataError(ticketName, ticketName_message, 1);
-            errorCount += dataError(ticketImgUrl, ticketImgUrl_message, 1);
+            errorCount += dataError(ticketImgUrl, ticketImgUrl_message, 2);
             errorCount += dataError(ticketRegion, ticketRegion_message, 1);
-            errorCount += dataError(ticketPrice, ticketPrice_message, 2);
-            errorCount += dataError(ticketNum, ticketNum_message, 2);
-            errorCount += dataError(ticketRate, ticketRate_message, 3);
-            errorCount += dataError(ticketDescription, ticketDescription_message, 4);
+            errorCount += dataError(ticketPrice, ticketPrice_message, 3);
+            errorCount += dataError(ticketNum, ticketNum_message, 3);
+            errorCount += dataError(ticketRate, ticketRate_message, 4);
+            errorCount += dataError(ticketDescription, ticketDescription_message, 5);
             if (errorCount > 0) return;
 
             //組資料
