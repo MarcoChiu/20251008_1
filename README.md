@@ -1,4 +1,4 @@
-# JS 工程師養成直播班｜2025 秋季｜第五堂 - 期中試煉
+# JS 工程師養成直播班｜2025 秋季｜第五堂 - 期中試煉｜第六堂 - AJAX 操控
 
 ## [設計稿](https://www.figma.com/design/SHgr0iQnTPec19maqKCEpN/JS%E7%9B%B4%E6%92%AD%E7%8F%AD-Week5-Week7?node-id=1-597&t=9p6o3FJbJJ0l3YEq-0)
  
@@ -20,6 +20,8 @@
 - 描述欄位使用 textarea
 - 星級區間是 1-10 分
 - 金額、組數、星級的 type 為 Number
+- [JSON LV1 資料](https://raw.githubusercontent.com/hexschool/js-training/main/travelAPI-lv1.json)
+- [JSON LV2 資料](https://raw.githubusercontent.com/hexschool/js-training/main/travelApi.json)
 
  
  
