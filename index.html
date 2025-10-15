@@ -16,6 +16,7 @@
     <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
+
 <body>
     <section class="addTicket-panel">
         <div class="addTicket-img">
@@ -45,8 +46,6 @@
                 </div>
                 <div class="alert-message">
                     <p id="ticketImgUrl-message" data-message="圖片網址">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span> -->
                     </p>
                 </div>
             </div>
@@ -55,15 +54,10 @@
                     <label for="ticketRegion">景點地區</label>
                     <select id="ticketRegion" name="景點地區">
                         <option value="" disabled selected hidden>請選擇景點地區</option>
-                        <!-- <option value="台北">台北</option>
-                            <option value="台中">台中</option>
-                            <option value="高雄">高雄</option> -->
                     </select>
                 </div>
                 <div class="alert-message">
                     <p id="ticketRegion-message" data-message="景點地區">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span>   -->
                     </p>
                 </div>
             </div>
@@ -74,8 +68,6 @@
                 </div>
                 <div class="alert-message">
                     <p id="ticketPrice-message" data-message="套票金額">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span> -->
                     </p>
                 </div>
             </div>
@@ -86,8 +78,6 @@
                 </div>
                 <div class="alert-message">
                     <p id="ticketNum-message" data-message="套票組數">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span> -->
                     </p>
                 </div>
             </div>
@@ -98,8 +88,6 @@
                 </div>
                 <div class="alert-message">
                     <p id="ticketRate-message" data-message="套票星級">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span> -->
                     </p>
                 </div>
             </div>
@@ -111,8 +99,6 @@
                 </div>
                 <div class="alert-message">
                     <p id="ticketDescription-message" data-message="套票描述">
-                        <!-- <i class="fas fa-exclamation-circle"></i>
-                        <span>必填!</span> -->
                     </p>
                 </div>
             </div>
@@ -123,106 +109,13 @@
         <!-- 搜尋區 -->
         <div class="search-area">
             <select name="" class="regionSearch">
-                <!-- <option value="地區搜尋" disabled selected hidden>地區搜尋</option> -->
                 <option value="">全部地區</option>
-                <!-- <option value="台南">台南</option> -->
             </select>
             <!-- 本次搜尋共 3 筆資料 -->
             <p id="searchResult-text"></p>
         </div>
         <!-- 套票卡片區 -->
         <ul class="ticketCard-area">
-            <!-- <li class="ticketCard">
-                <div class="ticketCard-img">
-                    <a href="#">
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_1.png?raw=true"
-                            alt="">
-                    </a>
-                    <div class="ticketCard-region">高雄</div>
-                    <div class="ticketCard-rank">10</div>
-                </div>
-                <div class="ticketCard-content">
-                    <div>
-                        <h3>
-                            <a href="#" class="ticketCard-name">綠島自由行套裝行程</a>
-                        </h3>
-                        <p class="ticketCard-description">
-                            嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合。
-                        </p>
-                    </div>
-                    <div class="ticketCard-info">
-                        <p class="ticketCard-num">
-                            <span><i class="fas fa-exclamation-circle"></i></span>
-                            剩下最後 <span id="ticketCard-num"> 87 </span> 組
-                        </p>
-                        <p class="ticketCard-price">
-                            TWD <span id="ticketCard-price">$1400</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="ticketCard">
-                <div class="ticketCard-img">
-                    <a href="#">
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_4.png?raw=true"
-                            alt="">
-                    </a>
-                    <div class="ticketCard-region">台北</div>
-                    <div class="ticketCard-rank">2</div>
-                </div>
-                <div class="ticketCard-content">
-                    <div>
-                        <h3>
-                            <a href="#" class="ticketCard-name">清境高空觀景步道</a>
-                        </h3>
-                        <p class="ticketCard-description">
-                            清境農場青青草原數十公頃碧草，這些景觀豐沛了清境觀景步道的風格，也涵養它無可取代的特色。
-                        </p>
-                    </div>
-                    <div class="ticketCard-info">
-                        <div class="ticketCard-num">
-                            <p>
-                                <span><i class="fas fa-exclamation-circle"></i></span>
-                                剩下最後 <span id="ticketCard-num"> 99 </span> 組
-                            </p>
-                        </div>
-                        <p class="ticketCard-price">
-                            TWD <span id="ticketCard-price">$240</span>
-                        </p>
-                    </div>
-                </div>
-            </li>
-            <li class="ticketCard">
-                <div class="ticketCard-img">
-                    <a href="#">
-                        <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/travel_3.png?raw=true"
-                            alt="">
-                    </a>
-                    <div class="ticketCard-region">台中</div>
-                    <div class="ticketCard-rank">7</div>
-                </div>
-                <div class="ticketCard-content">
-                    <div>
-                        <h3>
-                            <a href="#" class="ticketCard-name">山林悠遊套票</a>
-                        </h3>
-                        <p class="ticketCard-description">
-                            山林悠遊套票，結合南投清境高空步道、雙龍瀑布七彩吊橋、瑞龍瀑布園區之熱門景點。
-                        </p>
-                    </div>
-                    <div class="ticketCard-info">
-                        <div class="ticketCard-num">
-                            <p>
-                                <span><i class="fas fa-exclamation-circle"></i></span>
-                                剩下最後 <span id="ticketCard-num"> 20 </span> 組
-                            </p>
-                        </div>
-                        <p class="ticketCard-price">
-                            TWD <span id="ticketCard-price">$1765</span>
-                        </p>
-                    </div>
-                </div>
-            </li> -->
         </ul>
         <!-- 查無關鍵字區 -->
         <div class="cantFind-area">
@@ -235,39 +128,52 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
         //############data############
-        const lv = 0; //0.寫死的data LV1.travelAPI-lv1.json LV2.ravelApi.json
+        const lv = 2; //  LV1.travelAPI-lv1.json LV2.ravelApi.json
         let areaData = [];
         let data = [];
+
+        // 助教建議:dataError 的參數 type 值會建議調整為語意化名稱，目前使用數字可讀性較差
+        // 第六堂新增 不要用數字 新增驗證格式
+        const validationTypes = Object.freeze({
+            stringRequired: Symbol("stringRequired"),
+            imgFormat: Symbol("imgFormat"),
+            numberRequired: Symbol("numberRequired"),
+            numberRange: Symbol("numberRange"),
+            stringMaxLength: Symbol("stringMaxLength"),
+
+        });
         //############Selector############
         //form
+        const addTicketForm = document.querySelector(".addTicket-form");
+
         const ticketName = document.querySelector('#ticketName');
-        const ticketName_message = document.querySelector('#ticketName-message');
+        const ticketName_Message = document.querySelector('#ticketName-message');
 
         const ticketImgUrl = document.querySelector('#ticketImgUrl');
-        const ticketImgUrl_message = document.querySelector('#ticketImgUrl-message');
+        const ticketImgUrl_Message = document.querySelector('#ticketImgUrl-message');
 
         const ticketRegion = document.querySelector('#ticketRegion');
-        const ticketRegion_message = document.querySelector('#ticketRegion-message');
+        const ticketRegion_Message = document.querySelector('#ticketRegion-message');
 
         const ticketPrice = document.querySelector('#ticketPrice');
-        const ticketPrice_message = document.querySelector('#ticketPrice-message');
+        const ticketPrice_Message = document.querySelector('#ticketPrice-message');
 
         const ticketNum = document.querySelector('#ticketNum');
-        const ticketNum_message = document.querySelector('#ticketNum-message');
+        const ticketNum_Message = document.querySelector('#ticketNum-message');
 
         const ticketRate = document.querySelector('#ticketRate');
-        const ticketRate_message = document.querySelector('#ticketRate-message');
+        const ticketRate_Message = document.querySelector('#ticketRate-message');
 
         const ticketDescription = document.querySelector('#ticketDescription');
-        const ticketDescription_message = document.querySelector('#ticketDescription-message');
+        const ticketDescription_Message = document.querySelector('#ticketDescription-message');
 
-        const addTicket_btn = document.querySelector('.addTicket-btn');
+        const addTicket_Btn = document.querySelector('.addTicket-btn');
 
         //篩選區
         const regionSearch = document.querySelector('.regionSearch'); // 區域
-        const searchResult_text = document.querySelector('#searchResult-text'); //共搜尋幾筆
-        const ticketCard_area = document.querySelector('.ticketCard-area'); //資料區
-        const cantFind_area = document.querySelector('.cantFind-area'); //查無關鍵字區
+        const searchResult_Text = document.querySelector('#searchResult-text'); //共搜尋幾筆
+        const ticketCard_Area = document.querySelector('.ticketCard-area'); //資料區
+        const cantFind_Area = document.querySelector('.cantFind-area'); //查無關鍵字區
         //############function############
         //建立select的option 因為一次給兩個select會有問題
         function createOption(tag, value, html) {
@@ -303,32 +209,29 @@
         }
 
         //錯誤
-        function dataError(obj, objicon, type) {
+        function dataValidation(obj, objicon, validationType) {
             let error = "";
-            //console.log(obj.value);
-            switch (type) {
-                case 1: //字串
+            //console.log(obj.value, validationType);
+            switch (validationType) {
+                case validationTypes.stringRequired: //字串
                     if (isEmpty(obj.value)) { error = "必填!"; }
                     break;
-                case 2://圖片連結
-
-
-
+                case validationTypes.imgFormat://圖片連結
                     if (isImageUrl(obj.value) === false) {
                         error = "圖片網址格式錯誤!";
                     }
                     break;
-                case 3: //數字     
+                case validationTypes.numberRequired: //數字     
                     if (isEmpty(obj.value) && isNaN(obj.val)) { error = "必填數字!"; }
                     break;
-                case 4: //數字   
+                case validationTypes.numberRange: //數字   
                     if (isEmpty(obj.value) || isNaN(obj.value)) {
                         error = "必填數字!";
                     } else if (parseInt(obj.value) < 1 || parseInt(obj.value) > 10) {
                         error = "星級區間是 1-10 分";
                     }
                     break;
-                case 5: //數字過多   
+                case validationType.stringMaxLength: //數字過多   
                     if (obj.value !== "" && obj.value !== undefined && obj.value.length > 100) { error = "限 100 字"; }
                     break;
             }
@@ -370,7 +273,7 @@
             let html = "";
             if (filterData.length > 0) {
                 //console.log('>0');
-                cantFind_area.style.display = 'none';
+                cantFind_Area.style.display = 'none';
                 filterData.forEach(function (item) {
                     html += ` 
              <li class="ticketCard">
@@ -404,90 +307,60 @@
              </li>`;
                 });
             } else {
-                cantFind_area.style.display = 'block';
+                cantFind_Area.style.display = 'block';
             }
-            ticketCard_area.innerHTML = html;
-            searchResult_text.textContent = `本次搜尋共 ${filterData.length} 筆資料`;
+            ticketCard_Area.innerHTML = html;
+            searchResult_Text.textContent = `本次搜尋共 ${filterData.length} 筆資料`;
         }
 
         //初始化資料
         function init() {
-
+            let url = '';
             switch (lv) {
                 default:
-                case 0:
-
-                    data = [
-                        {
-                            "id": 0,
-                            "name": "肥宅心碎賞櫻3日",
-                            "imgUrl": "https://images.unsplash.com/photo-1522383225653-ed111181a951?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1655&q=80",
-                            "area": "高雄",
-                            "description": "賞櫻花最佳去處。肥宅不得不去的超讚景點！",
-                            "group": 87,
-                            "price": 1400,
-                            "rate": 10
-                        },
-                        {
-                            "id": 1,
-                            "name": "貓空纜車雙程票",
-                            "imgUrl": "https://images.unsplash.com/photo-1501393152198-34b240415948?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
-                            "area": "台北",
-                            "description": "乘坐以透明強化玻璃為地板的「貓纜之眼」水晶車廂，享受騰雲駕霧遨遊天際之感",
-                            "group": 99,
-                            "price": 240,
-                            "rate": 2
-                        },
-                        {
-                            "id": 2,
-                            "name": "台中谷關溫泉會1日",
-                            "imgUrl": "https://images.unsplash.com/photo-1535530992830-e25d07cfa780?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
-                            "area": "台中",
-                            "description": "全館客房均提供谷關無色無味之優質碳酸原湯，並取用八仙山之山冷泉供蒞臨貴賓沐浴及飲水使用。",
-                            "group": 20,
-                            "price": 1765,
-                            "rate": 7
-                        }
-                    ];
-
-                    initSelect(); //初始化下拉跑一次
-                    search(); //先讓他搜尋一次會全部出來
-                    break
                 case 1:
-                    axios.get('https://raw.githubusercontent.com/hexschool/js-training/main/travelAPI-lv1.json')
-                        .then(function (response) {
-                            if (response.status === 200) {
-                                data = response.data;
-                                //console.log(data);
-                                initSelect(); //初始化下拉跑一次
-                                search(); //先讓他搜尋一次會全部出來
-                            }
-                        });
+                    url = 'https://raw.githubusercontent.com/hexschool/js-training/main/travelAPI-lv1.json';
                     break;
                 case 2:
-                    axios.get('https://raw.githubusercontent.com/hexschool/js-training/main/travelApi.json')
-                        .then(function (response) {
-                            if (response.status === 200) {
-                                data = response.data.data;
-                                initSelect(); //初始化下拉跑一次
-                                search(); //先讓他搜尋一次會全部出來
-                            }
-                        });
+                    url = 'https://raw.githubusercontent.com/hexschool/js-training/main/travelApi.json';
                     break;
             }
+
+            //// 助教建議:axios 可以在 .then() 後方加上 .catch() 捕捉錯誤，當發生錯誤時可以執行處理或印出訊息，附上文件範例https://github.com/axios/axios?tab=readme-ov-file#example
+            axios.get(url)
+                .then(function (response) {
+                    if (response.status === 200) {
+                        switch (lv) {
+                            default:
+                            case 1:
+                                data = response.data;
+                                break;
+                            case 2:
+                                data = response.data.data;
+                                break;
+                        }
+                        initSelect(); //初始化下拉跑一次
+                        search(); //先讓他搜尋一次會全部出來
+                    }
+                }).catch(function (error) {
+                    console.log(error);
+                })
+                .finally(function () {
+                });;
         }
+
 
         function addData() {
 
             //驗證錯誤
             let errorCount = 0;
-            errorCount += dataError(ticketName, ticketName_message, 1);
-            errorCount += dataError(ticketImgUrl, ticketImgUrl_message, 2);
-            errorCount += dataError(ticketRegion, ticketRegion_message, 1);
-            errorCount += dataError(ticketPrice, ticketPrice_message, 3);
-            errorCount += dataError(ticketNum, ticketNum_message, 3);
-            errorCount += dataError(ticketRate, ticketRate_message, 4);
-            errorCount += dataError(ticketDescription, ticketDescription_message, 5);
+            errorCount += dataValidation(ticketName, ticketName_Message, validationTypes.stringRequired);
+            errorCount += dataValidation(ticketImgUrl, ticketImgUrl_Message, validationTypes.imgFormat);
+            errorCount += dataValidation(ticketRegion, ticketRegion_Message, validationTypes.stringRequired);
+            errorCount += dataValidation(ticketPrice, ticketPrice_Message, validationTypes.numberRequired);
+            errorCount += dataValidation(ticketNum, ticketNum_Message, validationTypes.numberRequired);
+            errorCount += dataValidation(ticketRate, ticketRate_Message, validationTypes.numberRange);
+            errorCount += dataValidation(ticketDescription, ticketDescription_Message, validationTypes.stringMaxLength);
             if (errorCount > 0) return;
 
             //組資料
@@ -495,14 +368,15 @@
             //https://www.danvega.dev/blog/find-max-array-objects-javascript
             const maxId = Math.max(...data.map(x => x.id));
 
+            // 助教建議:透過 input 所取得的值為字串型別，依題意金額、組數、星級的型別需轉為 Number 儲存
             const createData = {
                 "id": maxId + 1,
                 "name": ticketName.value,
                 "imgUrl": ticketImgUrl.value,
                 "area": ticketRegion.value,
-                "price": ticketPrice.value,
-                "group": ticketNum.value,
-                "rate": ticketRate.value,
+                "price": parseInt(ticketPrice.value),
+                "group": parseInt(ticketNum.value),
+                "rate": parseInt(ticketRate.value),
                 "description": ticketDescription.value
             }
 
@@ -515,13 +389,16 @@
 
             search();
 
+            // 助教建議:新增資料後建議清空表單，可以使用 reset() 方法，附上參考文件 https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLFormElement/reset
+            addTicketForm.reset();
+
         }
         //############addEventListener############        
         regionSearch.addEventListener('change', function () {
             search();
         });
 
-        addTicket_btn.addEventListener('click', function () {
+        addTicket_Btn.addEventListener('click', function () {
             addData();
         });
 
@@ -540,6 +417,9 @@
         // 描述欄位使用 textarea -ok
         // 星級區間是 1-10 分 -ok
         // 金額、組數、星級的 type 為 Number -ok
+        //
+        // JSON LV1 資料  -ok
+        // JSON LV2 資料  -ok
     </script>
 </body>
 
