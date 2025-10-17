@@ -343,10 +343,30 @@
                         search(); //先讓他搜尋一次會全部出來
                     }
                 }).catch(function (error) {
-                    console.log(error);
+                    //AI
+                    // Handle the error
+                    if (axios.isAxiosError(error)) {
+                        // Axios-specific error handling
+                        if (error.response) {
+                            // The request was made and the server responded with a status code
+                            // that falls out of the range of 2xx
+                            console.error('Response Error:', error.response.data);
+                            console.error('Status Code:', error.response.status);
+                            console.error('Headers:', error.response.headers);
+                        } else if (error.request) {
+                            // The request was made but no response was received
+                            console.error('Request Error:', error.request);
+                        } else {
+                            // Something happened in setting up the request that triggered an Error
+                            console.error('Error Message:', error.message);
+                        }
+                    } else {
+                        // Generic JavaScript error handling
+                        console.error('Non-Axios Error:', error);
+                    }
                 })
                 .finally(function () {
-                });;
+                });
         }
 
 
