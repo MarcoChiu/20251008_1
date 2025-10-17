@@ -329,19 +329,17 @@
             //// 助教建議:axios 可以在 .then() 後方加上 .catch() 捕捉錯誤，當發生錯誤時可以執行處理或印出訊息，附上文件範例https://github.com/axios/axios?tab=readme-ov-file#example
             axios.get(url)
                 .then(function (response) {
-                    if (response.status === 200) {
-                        switch (lv) {
-                            default:
-                            case 1:
-                                data = response.data;
-                                break;
-                            case 2:
-                                data = response.data.data;
-                                break;
-                        }
-                        initSelect(); //初始化下拉跑一次
-                        search(); //先讓他搜尋一次會全部出來
+                    switch (lv) {
+                        default:
+                        case 1:
+                            data = response.data;
+                            break;
+                        case 2:
+                            data = response.data.data;
+                            break;
                     }
+                    initSelect(); //初始化下拉跑一次
+                    search(); //先讓他搜尋一次會全部出來                  
                 }).catch(function (error) {
                     //AI
                     // Handle the error
